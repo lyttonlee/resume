@@ -7,59 +7,59 @@
     height: `${clientHeight}`
   }">
     <transition
-      :duration="{ enter: 1500, leave: 0 }"
-      enter-active-class="animated tada">
-      <div class="section" v-if="init === 1">
+      :duration="{ enter: 1500, leave: 1500 }"
+      leave-active-class="animated zoomOutRight"
+      enter-active-class="animated zoomInLeft">
+      <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 1">
         <div class="sec">
-          <h3>111111111111</h3>
-          <p>adjsalkjhdsakhdksajhdkasd
-            asdsadhslakjdasl
-          </p>
+          <Con1></Con1>
         </div>
       </div>
     </transition>
     <transition
-      :duration="{ enter: 1500, leave: 0 }"
-      enter-active-class="animated tada">
-      <div class="section" v-if="init === 2">
+      :duration="{ enter: 1500, leave: 1500 }"
+      leave-active-class="animated zoomOutRight"
+      enter-active-class="animated zoomInLeft">
+      <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 2">
         <div class="sec">
-          <h3>2222222222222</h3>
-          <p>adjsalkjhdsakhdksajhdkasd
-            asdsadhslakjdasl
-          </p>
+          <Con2></Con2>
         </div>
       </div>
     </transition>
     <transition
-      :duration="{ enter: 1500, leave: 2800 }"
-      enter-active-class="animated zoomin"
-      leave-active-class="animated bounceOutRight">
-      <div class="section" v-if="init === 3">
+      :duration="{ enter: 1500, leave: 1500 }"
+      leave-active-class="animated zoomOutRight"
+      enter-active-class="animated zoomInLeft">
+      <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 3">
         <div class="sec">
-          <h3>33333333333333</h3>
-          <p>adjsalkjhdsakhdksajhdkasd
-            asdsadhslakjdasl
-          </p>
+          <Con3></Con3>
         </div>
       </div>
     </transition>
     <transition
-      :duration="{ enter: 1500, leave: 2800 }"
-      enter-active-class="animated tada"
-      leave-active-class="animated bounceOutRight">
-      <div class="section" v-if="init === 4">
+      :duration="{ enter: 1500, leave: 1500 }"
+      leave-active-class="animated zoomOutRight"
+      enter-active-class="animated zoomInLeft">
+      <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 4">
         <div class="sec">
-          <h3>44444444444444</h3>
-          <p>adjsalkjhdsakhdksajhdkasd
-            asdsadhslakjdasl
-          </p>
+          <Con4></Con4>
         </div>
       </div>
     </transition>
   </div>
 </template>
 <script>
+import Con1 from '@/components/compon1'
+import Con2 from '@/components/compon2'
+import Con3 from '@/components/compon3'
+import Con4 from '@/components/compon4'
 export default {
+  components: {
+    Con1,
+    Con2,
+    Con3,
+    Con4
+  },
   data () {
     return {
       // ..
@@ -71,6 +71,7 @@ export default {
   methods: {
     mouse (event) {
       // console.log(event)
+      // console.log(document.documentElement.clientHeight)
       if (event.deltaY > 0) {
         console.log('down')
         if (this.init === 4) {
@@ -89,6 +90,7 @@ export default {
     }
   },
   mounted () {
+    this.clientHeight = `${document.documentElement.clientHeight}px`
     // 然后监听window的resize事件．在浏览器窗口变化时再设置下背景图高度
     window.onresize = () => {
       this.clientHeight = `${document.documentElement.clientHeight}px`
@@ -112,6 +114,7 @@ export default {
   // opacity: .7;
   .section {
     width: 100%;
+    background: rgba(255, 255, 255, .3);
     .position;
     .sec {
       width: 100%;
