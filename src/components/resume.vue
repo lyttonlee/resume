@@ -7,9 +7,9 @@
     height: `${clientHeight}`
   }">
     <transition
-      :duration="{ enter: 1500, leave: 1500 }"
-      leave-active-class="animated zoomOutUp"
-      enter-active-class="animated zoomInDown">
+      :duration="{ enter: 2500, leave: 1500 }"
+      :leave-active-class="'animated ' + leaveanimate"
+      :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 1">
         <div class="sec">
           <Con1></Con1>
@@ -17,9 +17,9 @@
       </div>
     </transition>
     <transition
-      :duration="{ enter: 1500, leave: 1500 }"
-      leave-active-class="animated zoomOutUp"
-      enter-active-class="animated zoomInDown">
+      :duration="{ enter: 2500, leave: 1500 }"
+      :leave-active-class="'animated ' + leaveanimate"
+      :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 2">
         <div class="sec">
           <Con2></Con2>
@@ -28,8 +28,8 @@
     </transition>
     <transition
       :duration="{ enter: 1500, leave: 1500 }"
-      leave-active-class="animated zoomOutUp"
-      enter-active-class="animated zoomInDown">
+      :leave-active-class="'animated ' + leaveanimate"
+      :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 3">
         <div class="sec">
           <Con3></Con3>
@@ -38,8 +38,8 @@
     </transition>
     <transition
       :duration="{ enter: 1500, leave: 1500 }"
-      leave-active-class="animated zoomOutUp"
-      enter-active-class="animated zoomInDown">
+      :leave-active-class="'animated ' + leaveanimate"
+      :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 4">
         <div class="sec">
           <Con4></Con4>
@@ -70,7 +70,9 @@ export default {
       img: require('../../static/img/bg.jpg'),
       clientHeight: '900px',
       init: 1,
-      lastscroll: 0
+      lastscroll: 0,
+      leaveanimate: 'zoomOutUp',
+      enteranimate: 'zoomInDown'
     }
   },
   methods: {
