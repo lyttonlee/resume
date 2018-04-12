@@ -46,8 +46,6 @@
         </div>
       </div>
     </transition>
-    <!-- 右边的步骤条 -->
-    <div class="step"></div>
     <!-- 下方的下一页按钮 -->
     <div class="next"><i class="iconfont icon-xiala setarrow" @click="nextPage"></i></div>
   </div>
@@ -67,7 +65,7 @@ export default {
   data () {
     return {
       // ..
-      img: require('../../static/img/bg.jpg'),
+      img: require('../../static/img/bg2.jpg'),
       clientHeight: '900px',
       init: 1,
       lastscroll: 0,
@@ -125,7 +123,7 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import url('//at.alicdn.com/t/font_621771_lmtg7j21b75sif6r.css');
+@import '../less/index.less';
 .position {
   position: fixed;
   top: 0;
@@ -211,8 +209,8 @@ export default {
       // position:relative;
       .position-bottom;
       font-size: 40px;
-      color: rgba(7, 47, 63, 0.5);
-      opacity: .6;
+      color: rgba(4, 10, 41, 0.8);
+      opacity: .8;
       cursor: pointer;
       animation: myfirst 5s infinite;
     }
