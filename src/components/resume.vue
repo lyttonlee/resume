@@ -94,7 +94,7 @@ export default {
         } else {
           console.log('up')
           if (this.init === 1) {
-            this.init = 1
+            this.init = 4
           } else {
             this.init = this.init - 1
           }
@@ -213,6 +213,9 @@ export default {
       opacity: .8;
       cursor: pointer;
       animation: myfirst 5s infinite;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
     }
   }
 }

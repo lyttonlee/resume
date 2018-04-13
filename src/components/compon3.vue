@@ -36,19 +36,19 @@ export default {
         {
           name: '电商代理商城服务端(express-server)',
           skills: 'node express mongoose mongodb express-promise-router async语法',
-          content: '这是代理商城项目的服务端，express框架,数据库为mongodb3.4,使用async语法，七牛云作为图片存储空间，开发中用到RoBo 3T,postman等工具，功能也完全响应代理商城客户端',
+          content: '这是代理商城项目的服务端，express框架,数据库为mongodb3.4,使用async语法，七牛云作为图片存储空间，开发中用到RoBo 3T,postman等工具，功能也完全响应代理商城客户端!',
           github: 'https://github.com/lyttonlee/express-server-for-learn'
         },
         {
           name: 'MarkDown文章编辑器',
           skills: 'electron vue vue-cli vue-router axios qiniu nedb element-ui mavon-editor',
-          content: '本软件只要配置七牛云信息,文章中插入的图片将自动上传至用户的七牛云空间，软件使用nedb本地数据库，使用electron打包为各平台的应用',
+          content: '本软件只要配置七牛云信息,文章中插入的图片将自动上传至用户的七牛云空间，软件使用nedb本地数据库，使用electron打包为各平台的应用!',
           github: 'https://github.com/lyttonlee/md-editor'
         },
         {
           name: '火焰纹章if人物升级模拟',
           skills: 'electron vue vue-cli element-ui',
-          content: '这是一个辅助Demo，可以看成是火焰纹章if这款游戏的小插件，功能就是模拟游戏人物升级时的能力提升（因为是随机数成长，每次提升的能力都不一样），得出期望数值，虽然没啥意义，但很能体现程序员思维，会去实现某些无聊的日常小需求',
+          content: '这是一个辅助Demo，可以看成是火焰纹章if这款游戏的小插件，功能就是模拟游戏人物升级时的能力提升（因为是随机数成长，每次提升的能力都不一样），得出期望数值，虽然没啥意义，但很能体现程序员思维，会去实现某些无聊的日常小需求!',
           github: 'https://github.com/lyttonlee/if'
         }
       ]
@@ -73,10 +73,10 @@ export default {
   .info;
   .cont {
     .cont;
-    width: 80%;
+    width: 90%;
     .item {
       background-color: rgba(59, 123, 13, 0.2);
-      padding: 20px;
+      padding: 10px;
       border-radius: 15px;
       margin: 10px auto;
       @media screen and (max-width: 768px) {

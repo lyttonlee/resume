@@ -57,7 +57,7 @@ export default {
   .info;
   .cont {
     .cont;
-    margin: 80px auto;
+    margin: 20px auto;
     background-color: rgba(233, 225, 225, .3);
     border-radius: 25px;
     .avatar {
@@ -67,7 +67,7 @@ export default {
       margin-top: 20px;
     }
     .state {
-      padding: 30px 10px 50px;
+      padding: 20px 10px 50px;
       .iconBox {
         width: 80px;
         height: 80px;
