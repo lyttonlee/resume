@@ -30,13 +30,13 @@ export default {
         {
           name: '电商代理商城(learn)',
           skills: 'vue vue-cli vue-router vuex axios qiniu echart element-ui mavon-editor',
-          content: '这个代理商城项目有完整的前后端页面，基本完全实现了商城的所有功能，用户登录注册，状态管理，商品分类展示，用户购买、发货，后端页面也完全实现了网站整体设置，各类信息统计，商品管理、用户管理、订单管理等功能！',
+          content: '这个代理商城项目有完整的前后端页面，基本实现了商城的所有功能，用户登录注册，状态管理，商品分类展示搜索，用户购买、发货，后端页面也完全实现了网站整体设置，用户统计，购买统计，商品管理、用户管理、订单管理等的功能！',
           github: 'https://github.com/lyttonlee/learn'
         },
         {
           name: '电商代理商城服务端(express-server)',
-          skills: 'node express mongoose mongodb express-promise-router async语法',
-          content: '这是代理商城项目的服务端，express框架,数据库为mongodb3.4,使用async语法，七牛云作为图片存储空间，开发中用到RoBo 3T,postman等工具，功能也完全响应代理商城客户端!',
+          skills: 'node express mongoose mongodb3.4 express-promise-router async/await语法',
+          content: '这是代理商城项目的服务端，express框架,数据库为mongodb3.4,使用async/await语法，使用express-promise-router统一捕获error，七牛云作为图片存储空间，开发中用到RoBo 3T,postman等工具，功能也完全响应代理商城客户端!',
           github: 'https://github.com/lyttonlee/express-server-for-learn'
         },
         {
